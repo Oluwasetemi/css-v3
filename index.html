@@ -4,8 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AltSchool V3 CSS class</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <a href="./fundamentals.html"></a>
+  <!-- Ways to Apply CSS to HTML -->
+  <!-- 1. attribute (style) inline-->
+  <!-- 2. tag (style) internal-->
+  <!-- 3. css file via link tag external -->
+  <a href="./fundamentals.html">Class Notes</a>
+  <p>This is the first paragraph</p>
+  <p style="color:red;font-size:3rem;background: blue" >This is the second paragraph</p>
+
+  <style>
+    p {
+      color: purple;
+      font-size: 5rem;
+      background: grey;
+    }
+  </style>
+
+  <p class="external another class">This CSS was applied via link tag which we popularly call <strong>External <abbr title="Cascading Style Sheets">CSS</abbr></strong></p>
+
+  <p id="vscode"></p>
 </body>
 </html>

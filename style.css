@@ -1,0 +1,111 @@
+.external {
+  color: red;
+  font-size: 7rem;
+  border: solid;
+}
+
+p#vscode {}
+
+/* media queries */
+@media (max-width: 500px) {
+  .external {
+    color: rebeccapurple;
+  }
+}
+
+@media (orientation: portrait) {
+  .external {
+    border: dashed
+  }
+}
+
+
+/* simple */
+/* universal */
+/* reset or override */
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* type */
+p, div, body {
+  font-size: 3rem;
+}
+
+.class {
+  /* style rules */
+}
+
+#id {
+  /* style rules */
+}
+[title],
+[title=value],
+[title=Value s],
+[title^='cascade'],
+[title$='sheets'],
+[title*='style'] {
+  border: solid;
+  /* width 1px */
+  /* style solid */
+  /* color  */
+  text-decoration: underline ;
+  color: black;
+}
+
+/* pseudo classes: states :hover :active :focus :link :visited */
+/* p:hover {
+  font-size: 2rem;
+  transition: all 2s;
+} */
+
+li:nth-child(even) {}
+
+tr:nth-child(2n+1) {}
+
+
+/* pseudo element */
+::before {
+  content: '&';
+  font-size: 4rem;
+}
+::after {
+  content: '>';
+  font-size: 4rem;
+}
+li::marker {
+
+}
+
+::selection {
+  color: burlywood
+}
+
+/* combinators */
+/* descendants space */
+div.container p {
+
+}
+/* next siblings + */
+li + li {
+  margin-top: 10px;
+}
+
+p + p {
+  margin-top: 10px;
+}
+/* direct sibling > */
+p > strong {
+  font-weight: 900
+}
+/* subsequent siblings ~ */
+div ~ p {
+  padding: 10px
+}
+
+/* compound selectors comma*/
+p, div, strong, em {
+  /* style rule  */
+}

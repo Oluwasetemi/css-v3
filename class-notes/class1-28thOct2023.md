@@ -2,6 +2,7 @@
 
 - Anatomy of Style Rule
   ![Anatomy of CSS rule](https://res.cloudinary.com/drnqdd87d/image/upload/v1698508637/altschool/lfyefe4gej7kdkbgidkf.svg)
+
   NB - shorthand properties
 - [Media Queries](https://codepen.io/setemiojo/pen/BaMjYzW)
 - Selectors
@@ -21,13 +22,12 @@
   - REMs (relative to the root element)
   - Percentages
   - Dimension and lengths
+  - Angle deg, rad, grad, turn (1 turn = 360deg)
+  - Resolution units dpi (dots per inch)
 
 ![Absolute](image.png)
 ![Font-size Relative](image-1.png)
 ![Viewport Relative](image-2.png)
-
-- Angle deg, rad, grad, turn (1 turn = 360deg)
-  -Resolution units dpi (dots per inch)
 
 - Typography
   - Font families (Serif, San-serif, Mono)
