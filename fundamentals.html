@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fundamental CSS 101</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <a href="https://github.com/Oluwasetemi/css-v3" target="_blank">Check the class note on GitHub</a>
@@ -14,19 +16,56 @@
   <!-- 2. tag (style) internal-->
   <!-- 3. css file via link tag external -->
   <a href="./fundamentals.html">Class Notes</a>
-  <p>This is the first paragraph</p>
-  <p style="color:red;font-size:3rem;background: blue" >This is the second paragraph</p>
+  <p class="left">This is the first paragraph</p>
+  <p class="right" style="color:red;font-size:3rem;background: blue" >This is the second paragraph</p>
 
   <style>
+    /* 2 2 2 2 2 2 2 2 */
+
+    :root {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 700;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+
     p {
-      color: purple;
+      color: hsl(0, saturation, lightness);
       font-size: 5rem;
       background: grey;
     }
+
+    .box {
+      font-size: 12px;
+    }
+
+    .box p {
+      font-size: 2rem;
+    }
+
+    .left {
+      text-align: left;
+    }
+    .right {
+      text-align: right;
+    }
+    .center {
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+
   </style>
+
+  <div class="box">
+    <p class="center">This is a BOX</p>
+  </div>
 
   <p class="external another class">This CSS was applied via link tag which we popularly call <strong>External <abbr title="Cascading Style Sheets">CSS</abbr></strong></p>
 
   <p id="vscode"></p>
+
+  <strong></strong>
+  <em></em>
 </body>
 </html>

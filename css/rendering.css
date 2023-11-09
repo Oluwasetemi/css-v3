@@ -1,1 +1,114 @@
 /* :default normalizer or css reset */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;/** 150% of font-size **/
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* specificity */
+p.class > span#id > b  { /* 011 + 101 + 001 = 113 */
+  color: blue;
+}
+
+::before {
+
+}
+
+p::before {
+
+}
+
+.class {
+
+}
+
+:active {
+
+}
+
+p.class:nth-child(2) {
+  color: red;
+}
+
+#id {
+  color: orange;
+}
+p#unique {
+  color: green;
+}
+
+/* inline style attribute, internal style tag and external style  sheet */
+
+/* logical properties */
+.container {
+  color: red;
+  padding-inline: 5rem;
+  /* padding-inline-end: 5rem; */
+  padding-block: 5rem;
+  /* padding-block-end: 5rem; */
+  /* padding: 5rem 5rem; */
+  border: 10px solid;
+
+  /* width, height */
+  width: 400px;
+  height: 400px;
+
+  /* margin */
+  margin-inline: 2rem;
+  margin-block: 2rem;
+}
+
+p + p {
+  margin-block-start: 12px;
+}
+
+* {
+  /* box-sizing: unset; */
+}
+
+/* inline does not respect margin and width and height with exception for replaced element(img, video, canvas)
+
+Inline create space between elements because they are seen as typography can be fixed by line-height: 0 on containing block  or display: block on img
+
+*/
+
+/* dealing with inline block */
+
+
+
+
+div {
+  /* display: inline-block; */
+  /* width: 500px; */
+  /* height: 500px; */
+}
+
+/* width- fit-content, auto, %, vw max-width and min-width */
+/* width- fit-content, auto, %, max-width and min-width */
