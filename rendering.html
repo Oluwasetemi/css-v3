@@ -9,11 +9,282 @@
   </head>
 
   <body>
-    <a href="https://github.com/Oluwasetemi/css-v3" target="_blank">
-      <h1>
+    <h1>
+      <a href="https://github.com/Oluwasetemi/css-v3" target="_blank">
         Check the class note on GitHub
-      </h1>
-    </a>
+      </a>
+    </h1>
+
+    <style>
+      a {
+        color: unset;
+      }
+    </style>
+
+    <div class="container">
+      <p>
+        This paragraph contains <a href="#">a hyperlink</a>!
+      </p>
+      <p style="color: red;">
+        This is a red paragraph with <a href="#">another link</a>.
+      </p>
+    </div>
+
+    <!-- exercise on negative margin -->
+    <style>
+      body {
+        background: #222;
+        padding: 32px;
+      }
+
+      .card_negative {
+        /* margin-top: -48px; */
+      }
+
+      .card {
+        background-color: white;
+        padding: 32px;
+        border-radius: 8px;
+        margin-block-end: 16px;
+      }
+
+      h1 {
+        background: deeppink;
+        padding: 16px 32px;
+        margin-bottom: 24px;
+        font-size: 2rem;
+        text-align: center;
+        border-radius: 4px;
+      }
+    </style>
+
+    <div class="card ">
+      <h1>An Otter Essay</h1>
+      <p>
+        Otters have long, slim bodies and relatively short limbs. Their most striking anatomical features are the
+        powerful webbed feet used to swim, and their seal-like abilities holding breath underwater.
+      </p>
+    </div>
+
+    <!-- stretched out image -->
+    <style>
+      body {
+        background: #222;
+        padding: 32px;
+      }
+
+      .card {
+        background-color: white;
+        padding: 32px;
+        border-radius: 8px;
+      }
+
+      .stretched-out {
+        /* margin: 0 -32px; */
+        /* margin-inline: -32px; */
+      }
+
+      .card img {
+        display: block;
+        width: 100%;
+      }
+
+      p,
+      img {
+        margin-bottom: 16px;
+      }
+    </style>
+
+    <div class="card">
+      <p>
+        Otters have long, slim bodies and relatively short limbs. Their most striking anatomical features are the
+        powerful webbed feet used to swim, and their seal-like abilities holding breath underwater.
+      </p>
+      <!-- <div class="stretched-out">
+        <img alt="A cute otter in water" src="https://courses.joshwcomeau.com/cfj-mats/otter.jpg" />
+      </div> -->
+      <img alt="A cute otter in water" src="https://courses.joshwcomeau.com/cfj-mats/otter.jpg" />
+      <p>
+        More importantly, otters are glorious water dogs, playful and curious. The otter, no other, is the best animal.
+      </p>
+    </div>
+
+    <!-- understanding inline element and magic space -->
+    <style>
+      .inline-lesson img {
+        border: 5px solid red;
+        display: block;
+      }
+
+      .inline-lesson {
+        line-height: 0;
+        display: block;
+      }
+    </style>
+    <div class="inline-lesson">
+      <img src="https://courses.joshwcomeau.com/cfj-mats/placekitten-100.jpg" width="100" alt="Cat photo" />
+      <!-- duplicate img 3 times -->
+    </div>
+
+    <!-- dealing with inline block
+    NB inline block does not line-wrap so avoid using it on a tag in a paragraph. -->
+    <style>
+      strong {
+        /* display: inline-block; */
+        color: white;
+        background-color: red;
+        width: 100px;
+        margin-top: 32px;
+        text-align: center;
+      }
+
+      strong:hover {
+        /* transform: scale(1.2); */
+        scale: 1.2;
+      }
+    </style>
+
+    <p>
+      <strong>Warning:</strong> Alpaca may bite.
+    </p>
+
+
+    <!-- understanding width -->
+    <!-- % is based on the parent elements content space, block element width is auto, not 100% works similarly to margin: auto (hungry space) keywords - auto and fit-content, measurements (100%, 200px, 5rem) -->
+
+    <!-- relationship with min-width and max-width
+
+    The specified value of width applies to the content area so long as its value remains within the values defined by min-width and max-width.
+
+    1. If the value for width is less than the value for min-width, then min-width overrides width.
+    2. If the value for width is greater than the value for max-width, then max-width overrides width.-->
+
+    <!-- min-content(element children with line breaking) -->
+    <!-- min-content(smallest value that contains the content, without breaking it up) -->
+    <!-- fit-content(combine min and max with line break as need never exceed available space) -->
+
+    <!-- min-width -->
+    <!-- max-width -->
+    <style>
+      .box {
+        width: 50%;
+        min-width: 170px;
+        max-width: 300px;
+        margin: 0 auto;
+        border: solid hotpink;
+      }
+    </style>
+
+    <div class="box">
+      Hello World
+    </div>
+
+    <!-- reproduce the fit-content with any other css properties
+    display: table,
+      OR
+    min-width: min-content;
+    max-width: max-content;
+
+    build a max-width wrapper
+    .max-width {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    -->
+    <!-- understanding height -->
+    <!-- default - as small as possible (to contain its children) -->
+    <!-- height and body : 100% and min-height: 100% -->
+    <!--
+      .element {
+        height: 100vh; /* Fallback for older browsers */
+        height: 100svh;
+      }
+
+     -->
+
+     <!-- setting up a footer with margin and height -->
+     <style>
+      html, body {
+        height: 100%;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+      footer {
+        border: solid hotpink;
+        padding: 8px;
+        margin-top: auto;
+      }
+    </style>
+
+    <!-- margin collapse -->
+    <div class="margin-collapse-lesson">
+      <div class="box">
+        <p>
+          This is a paragraph.
+        </p>
+      </div>
+      <div class="box">
+        <p>
+          This is a paragraph.
+        </p>
+      </div>
+    </div>
+    <style>
+      .margin-collapse-lesson {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: hotpink;
+        margin: 16px;
+      }
+
+      p {
+        margin: 0;
+      }
+    </style>
+
+    <div class="wrapper">
+      <p>
+        I fill the viewport!
+      </p>
+      <footer>I'm at the bottom</footer>
+    </div>
+
+    <!-- https://www.figma.com/file/6hGqKA5scrZJScb9KW3Hj2/Huckleberry?type=design&node-id=0-1&mode=design&t=tu3A2tnzktp0rSVN-0 -->
+    <div class="special">
+      <figure>
+        <img src="https://courses.joshwcomeau.com/cfj-mats/wall-art.jpg"
+          alt="A bar graph showing the number of cats per capita" />
+        <figcaption>
+          Source: Photo by Efe Kurnaz in Camp Nou, Barcelona, Spain. Found on Unsplash.
+        </figcaption>
+      </figure>
+    </div>
+    <style>
+      figure {
+        padding: 8px;
+        border: 2px solid;
+        margin-block-start: 32px;
+        margin-block-end: 32px;
+        color: #fff;
+        /* magic source */
+        /* width: min-content; */
+      }
+
+      figcaption {
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+
 
   </body>
 

@@ -4,6 +4,14 @@
   border: solid;
 }
 
+p:nth-child() {
+  color: blue;
+}
+
+aside > p { /* 001 + 001 */
+
+}
+
 p#vscode {}
 
 /* media queries */
