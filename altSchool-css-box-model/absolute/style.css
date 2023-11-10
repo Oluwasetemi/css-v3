@@ -1,0 +1,87 @@
+body {
+  /* position: relative; */
+  height: 100vh;
+  margin-bottom: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  /* top:0, left: 0, right: 0, bottom: 0 */
+  /* position: absolute; */
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 2px solid;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 3px solid palevioletred;
+  position: absolute;
+  /* position: relative; */
+  /* top:0, left: 0, right: 0, bottom: 0 */
+  inset: 0px;
+  margin: auto;
+  /* overflow: hidden; */
+}
+
+.box1 {
+  z-index: 3;
+}
+
+.circle {
+  border-radius: 50%;
+  border: inherit;
+  position: absolute;
+}
+
+.small {
+  width: 25px;
+  height: 25px;
+  left: 70px;
+  top: -17px;
+  background-color: white;
+}
+
+.medium {
+  width: 35px;
+  height: 35px;
+  top: 70px;
+  left: -22px;
+  background-color: white;
+}
+
+.big {
+  width: 65px;
+  height: 65px;
+
+  top: -28.5px;
+  left: -28.5px;
+  background-color: white;
+}
+
+.box2 {
+  background-color: green;
+  top: -50px;
+  left: 100px;
+  z-index: 2;
+}
+
+
+span {
+  /* declaration variables or custom properties */
+  --var: 50px;
+  /* usage */
+  width: var(--var, 120px);
+  height: var(--var);
+  line-height: var(--var);
+  border-radius: 50%;
+  border: 3px solid red;
+  padding: 8px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
