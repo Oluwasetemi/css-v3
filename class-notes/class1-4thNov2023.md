@@ -39,6 +39,8 @@ p {
   - height algorithms
   - Margin collapse
 
+[Building something Amazing](https://codepen.io/setemiojo/pen/JjxNJVm)
+
 - Relative Positioning
 - Absolute Positioning
   - Centring Trick
@@ -57,6 +59,8 @@ p {
 - [Cascade](https://2019.wattenberger.com/blog/css-cascade)
 - [Josh W Comeau CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 - [Understanding % calculation](https://2019.wattenberger.com/blog/css-percents)
+- [Revert vs Unset](https://developer.mozilla.org/en-US/docs/Web/CSS/revert)
+- [Nesting in CSS](https://caniuse.com/?search=nesting)
 
 <!-- basic -->
 element and pseudo-element 001
@@ -68,5 +72,12 @@ inline 1000
 <!-- w= border + padding + content (border-box) -->
 <!-- w= content (content-box) -->
 
+<!-- workshop -->
+![[Huckleberry Figma](https://www.figma.com/file/6hGqKA5scrZJScb9KW3Hj2/Huckleberry?type=design&node-id=0-1&mode=design&t=tu3A2tnzktp0rSVN-0)](image-8.png)
+
+[Click here to access the Huckleberry Figma](https://www.figma.com/file/6hGqKA5scrZJScb9KW3Hj2/Huckleberry?type=design&node-id=0-1&mode=design&t=tu3A2tnzktp0rSVN-0)
 <!-- classwork -->
 ![Watch Nova](image-7.png)
+![BreadCrumb0](image-11.png)
+![BreadCrumb1](image-9.png)
+![BreadCrumb2](image-10.png)

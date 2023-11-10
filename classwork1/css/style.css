@@ -1,0 +1,101 @@
+body {
+  background-color: grey;
+}
+
+/*
+  universal selector - all elements
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  html selector(type) - elements
+*/
+
+
+
+/*
+  .class selector - classes
+*/
+.class {
+  color: yellow;
+}
+
+/*
+  #id selector - ids
+*/
+#name {
+  color: blue;
+}
+
+/*
+  [attribute] selector - attributes [attr] [attr=value] [attr~=value] [attr|=value] [attr^=value] [attr$=value] [attr*=value]
+*/
+
+a[title] {
+  color: purple;
+}
+
+a[href="https://www.google.com"] {
+  color: green;
+}
+
+/*
+  combinators selectors, descendants, child, adjacent sibling, general sibling, column siblings
+*/
+ul span {
+
+}
+
+ul > li {
+
+}
+
+body > p {
+
+}
+
+h1 + p {
+  text-decoration: underline;
+}
+
+h1 ~ p.third {
+  text-decoration-line: line-through;
+}
+
+/* col || td {
+  background-color: red;
+} */
+
+/*
+  Pseudo classes, pseudo selectors(:nth-child) :nth-last-child() :nth-of-type() :nth-last-of-type() :first-child :last-child :first-of-type :last-of-type :only-child :only-of-type :empty :target :enabled :disabled :checked :not(selector) :root :lang(language) :active :hover :focus :visited
+*/
+/* :hover, :visited, :active, :focu :nths */
+:last-child(p) {
+  transform: rotate(20deg);
+  font-size: 70px;
+}
+
+
+/*
+  Pseudo element
+*/
+p.third::before {
+  content: "Hello";
+  color: red;
+}
+p.third::after {
+  content: "Word";
+  color: green;
+}
+
+p.special::first-letter {
+  font-size: 50px;
+}
+
+p.special::first-line {
+  font-size: 30px;
+}

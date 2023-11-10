@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin Collapse</title>
+</head>
+<body>
+  <style>
+    .para {
+      border: 2px solid;
+    }
+    .para1 {
+      margin-bottom: -50px;
+    }
+    .para2 {
+      margin-top: 25px;
+    }
+  </style>
+
+  <!-- Rules of Margin Collapse -->
+  <!-- 1. Only vertical margins collapse -->
+
+    <div class="container">
+      <p class="para para1">Hello</p>
+    </div>
+    <!-- <br /> -->
+    <p class="para para2">Hey, I am below</p>
+
+  <!-- 2. Only adjacent element margins collapse -->
+  <!-- 3. Only margins of block-level elements collapse (flow layout, others do not - display property, flex, grid, floats, positioning, table layout, multiple column layout ) -->
+  <!-- margin can collapse in the same direction -->
+  <!-- 4. Only top and bottom margins collapse -->
+  <!-- 5. Only margins without padding and border collapse i.e margin collapse is blocked by padding or border, blocked by a gap, blocked by a scroll container -->
+  <!-- 6. The bigger margin wins -->
+  <!-- 7. Nesting doest prevent collapsing -->
+  <!-- More than 2 margins can collapse -->
+  <!-- A sibling with a negative margin might overlap it neighbor -->
+  <!-- 8. Negative and Positive margins are added together -->
+  <!-- 9. for multiple negative and positive margins, add all the positive and add up all the negative, add the sum of positive and sum of negative -->
+</body>
+</html>

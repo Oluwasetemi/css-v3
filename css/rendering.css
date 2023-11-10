@@ -3,7 +3,9 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -12,45 +14,147 @@
 }
 
 body {
-  line-height: 1.5;/** 150% of font-size **/
+  line-height: 1.5; /** 150% of font-size **/
   -webkit-font-smoothing: antialiased;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
+/* loading font  */
+/* transfonter.com */
+/**
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); IE9 Compat Modes
+    src: url('webfont.eot?\#iefix') format('embedded-opentype'),  IE6-IE8
+         url('webfont.woff') format('woff'),  Modern Browsers
+         url('webfont.ttf')  format('truetype'), Safari, Android, iOS
+         url('webfont.svg#svgFontName') format('svg');  Legacy iOS
+}
+*/
+@font-face {
+  font-family: 'MonaspaceArgonVarVF';
+  src: url('../assets/fonts/variable/MonaspaceArgonVarVF[wght,wdth,slnt].ttf')
+      format('truetype'),
+    url('../assets/fonts/webfonts/MonaspaceArgon-Bold.woff')
+      format('woff');
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: 'MonaspaceKryptonVarVF';
+  src: url('../assets/fonts/variable/MonaspaceKryptonVarVF[wght,wdth,slnt].ttf')
+      format('truetype'),
+    url('../assets/fonts/otf/MonaspaceKrypton-Italic.otf')
+      format('truetype');
+  font-weight: 100 1000;
+}
+
+@font-face {
+  font-family: 'MonaspaceNeonVarVF';
+  src: url('../assets/fonts/variable/MonaspaceKryptonVarVF[wght,wdth,slnt].ttf')
+      format('truetype'),
+    url('../assets/fonts/variable/MonaspaceNeonVarVF[wght,wdth,slnt].ttf')
+      format('truetype');
+  font-weight: 100 1000;
+}
+
+:root {
+  --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
+}
+
+h1, h2 {
+  font-family: "MonaspaceArgonVarVF", var(--font-fallback);
+}
+
+p {
+  font-family: "MonaspaceKryptonVarVF", var(--font-fallback);
+}
+
+figcaption, footer, span {
+  font-family: "MonaspaceNeonVarVF", var(--font-fallback);
+}
+
+/*
+font recommendation
+headlines - Proxima Nova, Freight Sans, Futura, Harmonia Sans, Graphik, FF Meta Serif, Roboto, Jubilat, Interstate, Neue Plak, Adelle.
+articles - Freight Text, Source Sans, Open Sans, Merriweather, Proxima Nova, Franklin Gothic, Camphor.
+Application UI - Proxima Nova, Inter UI, Roboto, Graphik, Source Sans, Lato, Avenir Next, Open Sans, Aktiv Grotesk, Benton Sans, Soleil, Camphor, Neue Plak Text, Effra
+*/
+
+/*
+Color recommendations
+Key code
+Primary - These are the splashes of color that should appear the most in your UI, and are the ones that determine the overall "look" of the site. Use these for things like primary actions, links, navigation items, icons, accent borders, or text you want to emphasize.
+
+Neutrals - These are the colors you will use the most and will make up the majority of your UI. Use them for most of your text, backgrounds, and borders, as well as for things like secondary buttons and links.
+
+Supporting - These colors should be used fairly conservatively throughout your UI to avoid overpowering your primary colors. Use them when you need an element to stand out, or to reinforce things like error states or positive trends with the appropriate semantic color.
+
+Palette 1
+Primary - Cyan (hsl(184, 91%, 17%), hsl(185, 84%, 25%), hsl(185, 81%, 29%), hsl(184, 77%, 34%), hsl(185, 62%, 45%), hsl(185, 57%, 50%), hsl(184, 65%, 59%), hsl(184, 80%, 74%), hsl(185, 94%, 87%), hsl(186, 100%, 94%)
+)
+Neutrals Blue Grey #102A43 hsl(209, 61%, 16%) #829AB1 hsl(209, 23%, 60%) #243B53 hsl(211, 39%, 23%) #9FB3C8 hsl(211, 27%, 70%) #334E68 hsl(209, 34%, 30%) #BCCCDC hsl(210, 31%, 80%) #486581 hsl(209, 28%, 39%) #D9E2EC hsl(212, 33%, 89%) #627D98 hsl(210, 22%, 49%) #F0F4F8 hsl(210, 36%, 96%)
+
+Supporting
+Indigo #19216C hsl(234, 62%, 26%) #2D3A8C hsl(232, 51%, 36%) #35469C hsl(230, 49%, 41%) #4055A8 hsl(228, 45%, 45%) #4C63B6 hsl(227, 42%, 51%)  #647ACB hsl(227, 50%, 59%) #7B93DB hsl(225, 57%, 67%) #98AEEB hsl(224, 67%, 76%) #BED0F7 hsl(221, 78%, 86%) #E0E8F9 hsl(221, 68%, 93%), Pink #5C0B33 hsl(330, 79%, 20%) #781244 hsl(331, 74%, 27%) #9B1B5A hsl(330, 70%, 36%) #AD2167 hsl(330, 68%, 40%) #C42D78 hsl(330, 63%, 47%) #DA4A91 hsl(330, 66%, 57%) #E668A7 hsl(330, 72%, 65%) #F191C1 hsl(330, 77%, 76%) #FAB8D9 hsl(330, 87%, 85%) #FFE0F0 hsl(329, 100%, 94%), Red #610404 hsl(360, 92%, 20%) #780A0A hsl(360, 85%, 25%) #911111 hsl(360, 79%, 32%) #A61B1B hsl(360, 72%, 38%) #BA2525 hsl(360, 67%, 44%) #D64545 hsl(360, 64%, 55%) #E66A6A hsl(360, 71%, 66%) #F29B9B hsl(360, 77%, 78%) #FACDCD hsl(360, 82%, 89%) #FFEEEE hsl(360, 100%, 97%)
+Yellow #513C06 hsl(43, 86%, 17%) #7C5E10 hsl(43, 77%, 27%) #A27C1A hsl(43, 72%, 37%) #C99A2E hsl(42, 63%, 48%) #E9B949 hsl(42, 78%, 60%) #F7D070 hsl(43, 89%, 70%) #F9DA8B hsl(43, 90%, 76%) #F8E3A3 hsl(45, 86%, 81%) #FCEFC7 hsl(45, 90%, 88%) #FFFAEB hsl(45, 100%, 96%)
+
+Palette 2
+Primary
+Neutrals
+Supporting
+
+
+Swatches
+Purple #240754 #724BB7 hsl(262, 43%, 51%) #8662C7 hsl(261, 47%, 58%) #A081D9 hsl(261, 54%, 68%) #CFBCF2 hsl(261, 68%, 84%) #EAE2F8 hsl(262, 61%, 93%) #AD4BB8 hsl(294, 43%, 51%) #BB61C7 hsl(293, 48%, 58%) #CE80D9 hsl(293, 54%, 68%) #ECBDF2 hsl(293, 67%, 85%) #F5E1F7 hsl(295, 58%, 93%) Purple (Vivid) #44056E hsl(276, 91%, 23%) #580A94 hsl(274, 87%, 31%) #690CB0 hsl(274, 87%, 37%) #7A0ECC hsl(274, 87%, 43%) #8719E0 hsl(273, 80%, 49%) Magenta (Vivid) #6E0560 hsl(308, 91%, 23%) #960888 hsl(306, 90%, 31%) #B30BA3 hsl(306, 88%, 37%) #CB10B8 hsl(306, 85%, 43%) #E019D0 hsl(305, 80%, 49%) #9446ED hsl(268, 82%, 60%) #A368FC hsl(264, 96%, 70%) #B990FF hsl(262, 100%, 78%) #DAC4FF hsl(262, 100%, 88%) #F2EBFE hsl(262, 90%, 96%) #ED47ED hsl(300, 82%, 60%) #F368FC hsl(296, 96%, 70%) #F48FFF hsl(294, 100%, 78%) #F8C4FE hsl(294, 97%, 88%) #FDEBFF hsl(294, 100%, 96%) hsl(263, #34126F hsl(262, #421987 hsl(262, #51279B hsl(262, 85%, 18%) 72%, 25%) 69%, 31%) 60%, 38%) #653CAD hsl(262, 48%, 46%) Magenta #4E0754 hsl(295, 85%, 18%) #671270 hsl(294, 72%, 25%) #7C1A87 hsl(294, 68%, 32%) #90279C hsl(294, 60%, 38%) #A23DAD hsl(294, 48%, 46%)
+*/
+
 /* specificity */
-p.class > span#id > b  { /* 011 + 101 + 001 = 113 */
+p.class > span#id > b {
+  /* 011 + 101 + 001 = 113 */
   color: blue;
 }
 
 ::before {
-
 }
 
 p::before {
-
 }
 
 .class {
-
 }
 
 :active {
-
 }
 
 p.class:nth-child(2) {
@@ -100,9 +204,6 @@ Inline create space between elements because they are seen as typography can be 
 */
 
 /* dealing with inline block */
-
-
-
 
 div {
   /* display: inline-block; */
