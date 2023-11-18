@@ -1,0 +1,46 @@
+body {
+  background: hsl(260deg 20% 20%);
+}
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 1rem;
+  background: hsl(260deg 20% 30%);
+  color: white;
+}
+.card {
+  flex: 1;
+  max-width: 300px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0px 2px 16px hsl(260deg 50% 20% / 0.7);
+}
+.primary.card {
+  flex: 1.25;
+  max-width: 350px;
+}
+.card h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(0deg 0% 40%);
+}
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card button {
+  width: 100%;
+  height: 3rem;
+}
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+body {
+  padding: 128px 16px;
+  min-height: 150vh;
+}

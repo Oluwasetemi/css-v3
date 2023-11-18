@@ -24,7 +24,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 input,
@@ -62,8 +62,7 @@ h6 {
 */
 @font-face {
   font-family: 'MonaspaceArgonVarVF';
-  src: url('../assets/fonts/variable/MonaspaceArgonVarVF[wght,wdth,slnt].ttf')
-      format('truetype'),
+  src:
     url('../assets/fonts/webfonts/MonaspaceArgon-Bold.woff')
       format('woff');
   font-weight: 100 1000;
@@ -88,12 +87,13 @@ h6 {
 }
 
 :root {
+  /* custom properties, css variable */
   --font-fallback: BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-sans;
 }
 
 h1, h2 {
-  font-family: "MonaspaceArgonVarVF", var(--font-fallback);
+  font-family: "MonaspaceArgonVarVF", var(--font-fallback, sans-serif);
 }
 
 p {
@@ -181,7 +181,9 @@ p#unique {
   border: 10px solid;
 
   /* width, height */
-  width: 400px;
+  width: 50%;
+  min-width: 250px;
+  max-width: 500px;
   height: 400px;
 
   /* margin */
@@ -213,3 +215,8 @@ div {
 
 /* width- fit-content, auto, %, vw max-width and min-width */
 /* width- fit-content, auto, %, max-width and min-width */
+.wrapper {
+  width: 50%;
+  min-width: 250px;
+  max-width: 500px;
+}
