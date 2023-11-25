@@ -30,6 +30,7 @@ p {
   4. Border
   5. Margin (negative margin, auto margins( only works for horizontal margins, on element with explicit width ))
 
+****
 ![How % is calculated](image-6.png)
 
 ![Create a beautiful heading with margin](image-5.png)
@@ -61,6 +62,7 @@ p {
 - [Understanding % calculation](https://2019.wattenberger.com/blog/css-percents)
 - [Revert vs Unset](https://developer.mozilla.org/en-US/docs/Web/CSS/revert)
 - [Nesting in CSS](https://caniuse.com/?search=nesting)
+- [Create a new stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
 
 <!-- basic -->
 element and pseudo-element 001
@@ -75,9 +77,11 @@ inline 1000
 <!-- workshop -->
 ![[Huckleberry Figma](https://www.figma.com/file/6hGqKA5scrZJScb9KW3Hj2/Huckleberry?type=design&node-id=0-1&mode=design&t=tu3A2tnzktp0rSVN-0)](image-8.png)
 
-[Click here to access the Huckleberry Figma](https://www.figma.com/file/6hGqKA5scrZJScb9KW3Hj2/Huckleberry?type=design&node-id=0-1&mode=design&t=tu3A2tnzktp0rSVN-0)
+[Click here to access the Huckleberry Figma](https://www.figma.com/file/asii3DqgmbEkAkEQDUPI6C/huckleberry?type=design&node-id=0%3A1&mode=design&t=VpzxbA50b3ezDqVk-1)
 <!-- classwork -->
 ![Watch Nova](image-7.png)
 ![BreadCrumb0](image-11.png)
 ![BreadCrumb1](image-9.png)
 ![BreadCrumb2](image-10.png)
+![Create something like this](image-12.png)
+![create a stacking context](image-13.png)

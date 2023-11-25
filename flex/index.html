@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container" id="container">
+      <div>One</div>
+      <div>Item two</div>
+      <div>The item we will refer to as three</div>
+    </div>
+    <style>
+      .container {
+        display: flex;
+        /* gap: 10px; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* flex-flow: column wrap; */
+        width: 400px;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+
+      }
+      div:not(.container) {
+        border: 1px solid;
+      }
+
+      div:not(.container) {
+        flex: 1;
+        &:nth-child(1) {
+          order: 3;
+          border-color: red;
+          flex: 2;
+          /* flex: 1 1 auto; */
+        }
+        &:nth-child(2) {
+          order: 1;
+          border-color: blue;
+          /* flex: 1 1 auto; */
+        }
+      }
+    </style>
+  </body>
+
+</html>

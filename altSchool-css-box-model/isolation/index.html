@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+    header {
+      position: fixed;
+      z-index: 2;
+    }
+    .pricing {
+      /*
+        Try removing me, and then
+        scroll the page.
+      */
+      isolation: isolate;
+    }
+    .card {
+      position: relative;
+      z-index: 1;
+    }
+    .primary.card {
+      z-index: 2;
+      margin: -32px -16px;
+    }
+  </style>
+
+  <header>
+    Synergistic Inc.
+  </header>
+  <section class="pricing">
+    <article class="card">
+      <h2>Starter</h2>
+      <div class="price">$29</div>
+      <p>For personal projects.</p>
+      <ul>
+        <li>3 projects</li>
+        <li>100gb monthly transfer</li>
+        <li>20gb storage</li>
+        <li>No support</li>
+      </ul>
+      <button>Buy Now</button>
+    </article>
+
+    <article class="primary card">
+      <h2>Pro</h2>
+      <div class="price">$99</div>
+      <p>For small businesses looking to grow. Our most popular plan for ambitious organizations.</p>
+      <ul>
+        <li>10 projects</li>
+        <li>500gb monthly transfer</li>
+        <li>1tb storage</li>
+        <li>Email customer support</li>
+      </ul>
+      <button>Buy Now</button>
+    </article>
+
+    <article class="card">
+      <h2>Enterprise</h2>
+      <div class="price">Contact Us</div>
+      <p>For large orgs.</p>
+      <ul>
+        <li>Unlimited projects, transers, storage.</li>
+        <li>Dedicated phone & email support</li>
+      </ul>
+      <button>Buy Now</button>
+    </article>
+  </section>
+</body>
+</html>

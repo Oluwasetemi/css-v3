@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Absolute</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
 
-  <div class="container">
-    <div class="box box1">
-      <!-- <div class="big circle"></div> -->
-      <!-- <div class="small circle"></div> -->
-      <!-- <div class="medium circle"></div> -->
-    </div>
-    <!-- <div class="box box2">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="box box1">
+        <!-- <div class="big circle"></div> -->
+        <!-- <div class="small circle"></div> -->
+        <!-- <div class="medium circle"></div> -->
+      </div>
+      <!-- <div class="box box2">
       Another box
     </div> -->
-  </div>
+    </div>
 
-  <span>?</span>
-</body>
+    <span>?</span>
+
+    <style>
+      .parent {
+        width: 200px;
+        height: 150px;
+        border: 5px solid;
+        /* position: relative; */
+      }
+
+      .rebellious-teenager {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background: deeppink;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    </style>
+
+    <!-- Absolute elements can only be contained by other elements using Positioned layout. or according to the initial containing block -->
+    <div class="parent">
+      <div class="rebellious-teenager"></div>
+    </div>
+
+    <!-- The default value of the z-index property is auto, which is equivalent to the number 0. Therefore, any value greater than 0 can be used to "promote" an element to sit in front of its siblings: -->
+  </body>
+
 </html>
