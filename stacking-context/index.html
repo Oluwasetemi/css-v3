@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+
+
+
+    <div class="box big">
+      <div class="big-circle"></div>
+      <div class="circle"></div>
+      <div class="small-circle"></div>
+    </div>
+
+
+    <style>
+
+      .box {
+        width: 25%;
+        height: 100px;
+        border: 10px solid;
+        /* position: relative; */
+        /* isolation: isolate; */
+        background-color: pink;
+        display: flex;
+        position: absolute;
+        z-index: 4;
+
+
+        /*   overflow: scroll; */
+        margin-bottom: 10px;
+
+
+        >.child {
+          width: 400px;
+        }
+      }
+
+      .circle {
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+        margin: 10px;
+        border-radius: 50%;
+        background: blue;
+      }
+
+      .big-circle {
+        background: blue;
+        top: -100px;
+        left: -100px;
+        width: 200px;
+        height: 200px;
+        border: 10px solid red;
+        margin: 10px;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .small-circle {
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        margin: 10px;
+        border-radius: 50%;
+      }
+
+      .big {
+        width: 600px;
+        margin: 200px auto;
+        height: 500px;
+        /* position: relative; */
+      }
+    </style>
+  </body>
+
+</html>

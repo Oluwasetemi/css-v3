@@ -1,0 +1,104 @@
+/* css reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5; /** 150% of font-size **/
+  -webkit-font-smoothing: antialiased;
+}
+
+/* replaced element */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* main css */
+h2 {
+  line-height: 1.2;
+}
+
+p {
+  margin-block-end: 16px;
+  font-size: 1.25rem;
+}
+
+strong {
+  color: 	hsl(160, 100%, 30%)
+}
+
+section.top {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-inline: 24px;
+  padding-block-end: 64px;
+
+  > h2 {
+    padding-block-start: 96px;
+    padding-block-end: 48px;
+    font-size: 2rem;
+  }
+
+  > p {
+    max-width: 415px
+  }
+}
+
+section.bottom {
+  background-color: hsla(0, 0%, 40%, 1);
+  border-top: 8px solid hsla(0, 0%, 60%, 1);
+  padding-block-start: 72px;
+  padding-block-end: 60px;
+
+  > h2 {
+  }
+}
+
+.card {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: hsla(0, 0%, 100%, 1);
+  padding-inline: 24px;
+  padding-block-end: 24px;
+  border-bottom: 6px solid hsla(0, 0%, 60%, 1);
+  padding-block-start: 8px;
+
+  > h2 {
+    /* width: max-content; */
+    background-color: hsla(45, 100%, 50%, 1);
+    padding-inline: 32px;
+    padding-block-start: 16px;
+    padding-block-end: 15px;
+    margin-inline-start: -32px;
+    border-bottom: 8px solid hsla(45, 100%, 40%, 1);
+    margin-block-end: 16px;
+  }
+}
