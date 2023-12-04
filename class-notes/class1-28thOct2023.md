@@ -4,10 +4,11 @@
   ![Anatomy of CSS rule](https://res.cloudinary.com/drnqdd87d/image/upload/v1698508637/altschool/lfyefe4gej7kdkbgidkf.svg)
 
   NB - shorthand properties
+
 - [Media Queries](https://codepen.io/setemiojo/pen/BaMjYzW)
 - Selectors
   - Simple Selectors (universal, type, class, id, attribute-`[attribute_name='value' s], [href*='example.com'] contains, [href^='https'] start with, [href$='.com'] ends with`, grouping with comma)
-  - Pseudo Class(states) `:hover, :nth-child(), :checked`  and Elements `::before, ::after, ::marker, ::selection`
+  - Pseudo Class(states) `:hover, :nth-child(), :checked      :only-child, :not(), :last-child, :nth-last-child(), :last-of-type` and Elements `::before, ::after, ::marker, ::selection`
   - Complex Selectors (combinator - descendants (space) next siblings (+) subsequent siblings (~)), and compound (combining multiple css rules p.class, p#id)
 - [Color](https://www.joshwcomeau.com/css/color-formats/)
   - Hex code
@@ -34,8 +35,11 @@
   - Web fonts
 
 ```html
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
 ```
 
 ```css
