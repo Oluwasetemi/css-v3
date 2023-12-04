@@ -8,7 +8,7 @@
 - [Media Queries](https://codepen.io/setemiojo/pen/BaMjYzW)
 - Selectors
   - Simple Selectors (universal, type, class, id, attribute-`[attribute_name='value' s], [href*='example.com'] contains, [href^='https'] start with, [href$='.com'] ends with`, grouping with comma)
-  - Pseudo Class(states) `:hover, :nth-child(), :checked      :only-child, :not(), :last-child, :nth-last-child(), :last-of-type` and Elements `::before, ::after, ::marker, ::selection`
+  - Pseudo Class(states) `:hover, :nth-child(), :checked, :only-child, :not(), :last-child, :nth-last-child(), :last-of-type` and Elements `::before, ::after, ::marker, ::selection`
   - Complex Selectors (combinator - descendants (space) next siblings (+) subsequent siblings (~)), and compound (combining multiple css rules p.class, p#id)
 - [Color](https://www.joshwcomeau.com/css/color-formats/)
   - Hex code
