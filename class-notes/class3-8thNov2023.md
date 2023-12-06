@@ -73,3 +73,6 @@ footer {
 - [Grid.io bg wesbos](https://flex.io) and Youtube playlist
 - [CSS Trick Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [CSS Trick guide to grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [Centering with Flex and Grid](https://codepen.io/setemiojo/pen/QWYBPYq)
+- [Centering in CSS CSS Tricks](https://css-tricks.com/centering-css-complete-guide/)
+- [Interesting one line css tricks by una kravets](https://1linelayouts.glitch.me/)
